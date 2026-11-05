@@ -9,6 +9,6 @@
 - A `0.2.0` wheel built successfully; it contains both built-in manifests.
 - A brief loopback smoke check on port 18765 returned `{"status":"ok"}` and listed two plugins. The server was stopped afterward. The default port 8765 was already occupied by another process, so it was not used for this check.
 - The HTTPS check was tested with mocked responses and TLS errors. No real target was contacted.
-- The first public GitHub CI run passed tests and lint but failed dependency audit on a preinstalled vulnerable `setuptools` in Python 3.11. The workflow now upgrades `setuptools` before the audit; rerun pending.
+- The first public GitHub CI run passed tests and lint but failed dependency audit on a preinstalled vulnerable `setuptools` in Python 3.11. The workflow now upgrades `setuptools` before the audit. [CI run #3](https://github.com/Bythron/sentinel-workbench/actions/runs/42118460154) completed successfully on Python 3.11, 3.12 and 3.13.
 
 Tests use temporary databases. No live HTTP/TLS target was contacted.

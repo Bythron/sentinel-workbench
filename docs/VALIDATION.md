@@ -6,4 +6,4 @@
 - `python3 -m compileall -q src`: passed.
 - The suite corrupts one saved payload and confirms that verification fails.
 
-Phase 2 follow-up: Python 3.13 editable installation with `.[test]` succeeded. The expanded test suite, FastAPI TestClient, lint and dependency audit results are recorded in the phase 2 validation note. CI is configured for Python 3.11–3.13 but has not run on GitHub. No public repository has been created.
+Phase 2 follow-up: Python 3.13 editable installation with `.[test]` succeeded. The expanded test suite, FastAPI TestClient, lint, dependency audit and public CI results are recorded in the phase 2 validation note. The repository is public at https://github.com/Bythron/sentinel-workbench.
