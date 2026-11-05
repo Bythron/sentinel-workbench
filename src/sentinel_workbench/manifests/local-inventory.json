@@ -1,0 +1,1 @@
+{"api_version":1,"name":"local-inventory","version":"0.2.0","capability":"inventory.read","target":"local-host","permissions":[],"platforms":["Darwin","Linux","Windows"],"timeout_seconds":5}
