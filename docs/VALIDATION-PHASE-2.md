@@ -9,6 +9,6 @@
 - A `0.2.0` wheel built successfully; it contains both built-in manifests.
 - A brief loopback smoke check on port 18765 returned `{"status":"ok"}` and listed two plugins. The server was stopped afterward. The default port 8765 was already occupied by another process, so it was not used for this check.
 - The HTTPS check was tested with mocked responses and TLS errors. No real target was contacted.
-- GitHub CI has not run because the repository has not been published.
+- The first public GitHub CI run passed tests and lint but failed dependency audit on a preinstalled vulnerable `setuptools` in Python 3.11. The workflow now upgrades `setuptools` before the audit; rerun pending.
 
 Tests use temporary databases. No live HTTP/TLS target was contacted.
